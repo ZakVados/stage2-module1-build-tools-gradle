@@ -1,4 +1,17 @@
 //add everything here
+group = 'com.epam'
+version = '1.0'
+
+repositories {
+//  Gradle allows you to retrieve declared dependencies from any Maven-compatible or Ivy-compatible repository.
+    mavenCentral()
+}
+
+// In this section, we can declare dependencies that are necessary for a particular subject.
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.11'
+}
+
 
 test {
     useJUnitPlatform()
