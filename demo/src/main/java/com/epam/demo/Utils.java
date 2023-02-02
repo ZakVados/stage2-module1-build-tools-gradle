@@ -9,8 +9,7 @@ public class Utils {
         for (String str : args) {
             try {
                 if (Float.parseFloat(str) <= 0) return false;
-            } catch (NumberFormatException e) {
-                System.out.println("NumberFormat Exception: invalid input string");
+            } catch (NumberFormatException | NullPointerException e) {
                 return false;
             }
         }
